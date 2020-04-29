@@ -7,7 +7,9 @@ const numRange = document.querySelector("#js-numRange");
 const input = document.querySelector("#js-input");
 const playBtn = document.querySelector("#js-playBtn");
 const result = document.querySelector(".result");
-const resultSpan = document.querySelector("#js-resultSpan");
+const resultSpan1 = document.querySelector("#js-resultSpan1");
+const resultSpan2 = document.querySelector("#js-resultSpan2");
+const resultSpan3 = document.querySelector("#js-resultSpan3");
 let gNum = 100;
 
 function handleRange(event) {
@@ -18,9 +20,13 @@ function handleRange(event) {
 
 function paintResult(num, randomNum) {
   if (parseInt(num) === randomNum) {
-    resultSpan.innerText = `You Choose: ${num}, the machine choose: ${randomNum}.\nYou won`;
+    resultSpan1.innerText = `당신의 수 ${num}`;
+    resultSpan2.innerText = `저의 수 ${randomNum}`;
+    resultSpan3.innerText = `우와 이겼네요!`;
   } else {
-    resultSpan.innerText = `You Choose: ${num}, the machine choose: ${randomNum}.\nYou lost`;
+    resultSpan1.innerText = `당신의 수 ${num}`;
+    resultSpan2.innerText = `저의 수 ${randomNum}`;
+    resultSpan3.innerText = `제가 이겼네요...`;
   }
 }
 

@@ -1,0 +1,26 @@
+{
+  "name": "js-casino",
+  "version": "1.0.0",
+  "description": "JS Casino(Random Number Game)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hshine1226/js-casino.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hshine1226/js-casino/issues"
+  },
+  "homepage": "https://github.com/hshine1226/js-casino#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.3.5"
+  }
+}
