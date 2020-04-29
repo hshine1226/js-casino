@@ -2,20 +2,19 @@
 // import "./styles.css";
 // <⚠️ /DONT DELETE THIS ⚠️>
 
-const range = document.querySelector("#js-range");
-const numRange = document.querySelector("#js-numRange");
-const input = document.querySelector("#js-input");
-const playBtn = document.querySelector("#js-playBtn");
-const result = document.querySelector(".result");
-const resultSpan1 = document.querySelector("#js-resultSpan1");
-const resultSpan2 = document.querySelector("#js-resultSpan2");
-const resultSpan3 = document.querySelector("#js-resultSpan3");
+const range = document.querySelector("#js-range"),
+  numRange = document.querySelector("#js-numRange"),
+  input = document.querySelector("#js-input"),
+  playBtn = document.querySelector("#js-playBtn"),
+  resultSpan1 = document.querySelector("#js-resultSpan1"),
+  resultSpan2 = document.querySelector("#js-resultSpan2"),
+  resultSpan3 = document.querySelector("#js-resultSpan3");
 let gNum = 100;
 
 function handleRange(event) {
   const value = event.target.value;
   gNum = value;
-  numRange.innerText = `Generate a number between 0 and ${value}`;
+  numRange.innerText = `0에서 ${value} 사이의 수를 생성합니다.`;
 }
 
 function paintResult(num, randomNum) {
